@@ -1,0 +1,7 @@
+{
+  "name": "Pageo — Digital Art & Colouring Store",
+  "description": "Pageo — Colouring E-Books, Digital Designs & Painting Assets. Print-ready 300 DPI PDFs, Procreate brushes, vector bundles, and artist deals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

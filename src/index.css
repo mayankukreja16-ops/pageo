@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #faf7f2;
+  --bg-card: #ffffff;
+  --bg-card-subtle: #f5f0ea;
+  --text-main: #231f20;
+  --text-muted: #6e655f;
+  --card-border: #ede6dd;
+  --card-shadow: 0 10px 30px -8px rgba(78, 59, 42, 0.08);
+  --header-bg: rgba(250, 247, 242, 0.92);
+  --header-border: #ede6dd;
+  --accent-coral: #ff6b6b;
+  --accent-peach: #ff9f43;
+  --accent-lavender: #845ec2;
+  --accent-sage: #20bf6b;
+  --accent-rose: #f368e0;
+  --pill-bg: #ede6dd;
+  --pill-text: #4a4039;
+  --font-heading: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+[data-theme="dark"] {
+  --bg-main: #121016;
+  --bg-card: #1c1824;
+  --bg-card-subtle: #241f30;
+  --text-main: #f8f6fb;
+  --text-muted: #a69fb4;
+  --card-border: #322b42;
+  --card-shadow: 0 15px 35px -8px rgba(0, 0, 0, 0.6);
+  --header-bg: rgba(18, 16, 22, 0.92);
+  --header-border: #282136;
+  --accent-coral: #ff7675;
+  --accent-peach: #fdcb6e;
+  --accent-lavender: #a29bfe;
+  --accent-sage: #00b894;
+  --accent-rose: #e84393;
+  --pill-bg: #292237;
+  --pill-text: #d8d0e7;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-serif-title {
+  font-family: var(--font-serif);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(132, 94, 194, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(132, 94, 194, 0.6);
+}
+
+/* Artistic gradients */
+.gradient-art-primary {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ff9f43 50%, #f368e0 100%);
+}
+
+.gradient-art-cool {
+  background: linear-gradient(135deg, #845ec2 0%, #2c73d2 50%, #0081cf 100%);
+}
+
+.gradient-art-soft {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+}
+
+.gradient-art-emerald {
+  background: linear-gradient(135deg, #20bf6b 0%, #0fb9b1 100%);
+}
